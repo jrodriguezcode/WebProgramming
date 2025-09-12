@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+</head>
+<body>
+    <h1>Coffee Order Form</h1>
+    <p>
+        Need something to help get you started for the day?
+        Place your order here and pick up a nice cup of Joe made just for you!
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+        <!--Input field for customer name-->
+        <p>
+            <label for="name">
+                <span>Customer Name: </span>
+            </label>
+            <input type="text" id="name" name="username">
+        </p>
+
+        <!--Input field for email-->
+        <p>
+            <label for="mail">
+                <span>Email Address: </span>
+            </label>
+            <input type="email" id="mail" name="user-mail">
+        </p>
+
+        <!--Dropdown menu for coffee types-->
+        <p>
+            <label for="cType">
+                <span>Coffee Type: </span>
+            </label>
+            <select id="cType" name="coffeeType">
+                <option value="frappe">Frappe</option>
+                <option value="affogato">Affogato</option>
+                <option value="espresso">Espresso</option>
+                <option value="mocha">Mocha</option>
+                <option value="redeye">Red Eye</option>
+            </select>
+        </p>
+
+        <!--Size selection menu-->
+        <fieldset>
+            <legend>Coffee Sizes</legend>
+            <p>
+                <input type="radio" name="size" id="size_1" value="small">
+                <label for="size_1">Small</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value="medium">
+                <label for="size_2">Medium</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value="large">
+                <label for="size_3">Large</label>
+            </p>
+        </fieldset>
+
+        <!--Extra Topping Menus-->
+        <h2>Extras</h2>
+        <p>
+            <input type="checkbox" id="top_1" name="top_whippedcream" value="whippedcream">
+            <label for="top_1">Whipped Cream</label>
+        </p>
+        <p>
+            <input type="checkbox" id="top_2" name="top_cinnamon" value="cinnamon">
+            <label for="top_2">Cinnamon</label>
+        </p>
+        <p>
+            <input type="checkbox" id="top_3" name="top_caramel" value="caramel">
+            <label for="top_3">Caramel</label>
+        </p>
+        <p>
+            <input type="checkbox" id="top_4" name="top_mint" value="mint">
+            <label for="top_4">Mint</label>
+        </p>
+        <p>
+            <input type="checkbox" id="top_5" name="top_honey" value="honey">
+            <label for="top_5">Honey</label>
+        </p>
+
+        <!--Area for additional comments-->
+        <p>
+            <label for="msg">Send us feedback if you'd like:</label><br>
+            <textarea id="msg" name="user_message"></textarea>
+        </p>
+
+        <!--Submit button-->
+        <p class="button">
+            <button type="submit">Send your order</button>
+        </p>
+    </form>
+</body>
+</html>
