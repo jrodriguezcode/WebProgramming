@@ -1,0 +1,59 @@
+/*
+Global Styles Code
+*/
+body {
+    background-color: #fdeb9e;
+    font-family: Arial;
+}
+
+/*
+Header Styling Code
+*/
+h1 {
+    color: #3a6f43;
+    text-align: center;
+}
+
+/*
+Paragraph Styling Code
+*/
+p {
+    color: #dc143c;
+    padding: 10px;
+}
+
+/*
+List Styling Code
+*/
+li::marker {
+    color: #31326f;
+}
+
+li {
+    color: #3e1e68;
+}
+
+/*
+Link Styling Code
+*/
+a {
+    color: blue;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*
+Box Styling Code
+*/
+.styled-box {
+    border: solid;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+.styled-box p {
+    text-align: center;
+}
